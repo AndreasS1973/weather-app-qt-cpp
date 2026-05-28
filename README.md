@@ -5,6 +5,9 @@ A lightweight Qt/C++ desktop application that retrieves and displays current wea
 The project was developed as part of a C++/Qt course and prepared as a small portfolio project. It demonstrates basic GUI programming with Qt Widgets, asynchronous network requests, JSON parsing, local configuration handling, and simple error handling.
 
 ---
+## Screenshot
+
+![WeatherApp screenshot](images/app_screenshot.png)
 
 ## Features
 
@@ -109,6 +112,8 @@ Requests are handled asynchronously using `QNetworkAccessManager`.
 
 ```text
 .
+├── images/
+│   └── app_screenshot.png
 ├── CMakeLists.txt
 ├── main.cpp
 ├── mainwindow.cpp
@@ -125,34 +130,26 @@ Requests are handled asynchronously using `QNetworkAccessManager`.
 
 Important parts of the application:
 
-* `getWeatherByCity()`
-  Builds and sends a weather request using a city name.
+* `getWeatherByCity()` — Builds and sends a weather request using a city name.
 
-* `getWeatherByGeoCoords()`
-  Builds and sends a weather request using latitude and longitude.
+* `getWeatherByGeoCoords()` — Builds and sends a weather request using latitude and longitude.
 
-* `processWeatherApiCall()`
-  Parses the JSON weather response and updates the UI.
+* `processWeatherApiCall()` — Parses the JSON weather response and updates the UI.
 
-* `processIconApiCall()`
-  Loads and displays the weather icon.
+* `processIconApiCall()` — Loads and displays the weather icon.
 
-* `updateInputFields()`
-  Enables or disables input fields depending on the selected search mode.
+* `updateInputFields()` — Enables or disables input fields depending on the selected search mode.
 
-* `configFilePath()`
-  Defines the path of the local `config.ini` file.
+* `configFilePath()` — Defines the path of the local `config.ini` file.
 
-* `initializeConfigFile()`
-  Creates a default `config.ini` file on first launch.
+* `initializeConfigFile()` — Creates a default `config.ini` file on first launch.
 
-* `loadApiKey()`
-  Reads the OpenWeather API key from `config.ini`.
+* `loadApiKey()` — Reads the OpenWeather API key from `config.ini`.
 
 Helper functions:
 
-* `wDirectionToString()` converts wind degrees to compass directions.
-* `wSpeedToBeaufort()` converts wind speed to the Beaufort scale.
+* `wDirectionToString()` — Converts wind degrees to compass directions.
+* `wSpeedToBeaufort()` — Converts wind speed to the Beaufort scale.
 
 ---
 
