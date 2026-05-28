@@ -5,6 +5,7 @@ A lightweight Qt/C++ desktop application that retrieves and displays current wea
 The project was developed as part of a C++/Qt course and prepared as a small portfolio project. It demonstrates basic GUI programming with Qt Widgets, asynchronous network requests, JSON parsing, local configuration handling, and simple error handling.
 
 ---
+
 ## Screenshot
 
 ![WeatherApp screenshot](images/app_screenshot.png)
