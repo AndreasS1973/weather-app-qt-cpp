@@ -1,8 +1,8 @@
 # WeatherApp – Qt/C++
 
-A lightweight Qt/C++ desktop application that retrieves and displays current weather information from the OpenWeather API.
+A lightweight Qt/C++ desktop application for retrieving and displaying current weather data from the OpenWeather API.
 
-The project was developed as part of a C++/Qt course and prepared as a small portfolio project. It demonstrates basic GUI programming with Qt Widgets, asynchronous network requests, JSON parsing, local configuration handling, and simple error handling.
+The app supports search by city name or geographic coordinates, handles asynchronous API requests, parses JSON weather responses, and stores local settings using QSettings in INI format.
 
 ---
 
